@@ -26,28 +26,33 @@ class _SplashScreenState extends State<SplashScreen> {
 
     return Scaffold(
       backgroundColor: Colors.white60,
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            Text(
-              'Create Customise Birthday Wishes',
-              style: TextStyle(fontSize: 28),
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            Container(
-              child: Image.asset('image/birthday2.png'),
-              width: 400,
-              height: 225,
-            ),
-            SizedBox(
-              height: 20,
-            ),
-            ElevatedButton(onPressed: navigate, child: Text("Start"))
-          ],
+      body: Container(
+        decoration: BoxDecoration(
+          color: Colors.black26,
+        ),
+        child: Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Text(
+                'Create Customise Birthday Wishes',
+                style: TextStyle(fontSize: 28),
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Container(
+                child: Image.asset('image/birthday2.png'),
+                width: 400,
+                height: 225,
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              ElevatedButton(onPressed: navigate, child: Text("Start"))
+            ],
+          ),
         ),
       ),
     );
