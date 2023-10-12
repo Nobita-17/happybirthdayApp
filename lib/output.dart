@@ -46,13 +46,16 @@ class _FinalScreenState extends State<FinalScreen> {
       body: Center(
         child: Container(
           // child: Text('${widget.color1},${widget.color2},${widget.color3}'),
+          decoration: BoxDecoration(
+            color: Colors.black12
+          ),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisSize: MainAxisSize.min,
             children: [
               Text(
                 "Happy Birthday ${widget.userName}",
-                style: const TextStyle(fontSize: 34, fontWeight: FontWeight.bold),
+                style: const TextStyle(fontSize: 34, fontWeight: FontWeight.bold,color: Colors.white10),
               ),
               ConfettiWidget(
                 confettiController: _controller,
@@ -88,7 +91,7 @@ class _FinalScreenState extends State<FinalScreen> {
               SizedBox(height: 70),
               Text(
                 " ${widget.birthdayMessage}",
-                style: const TextStyle(fontSize: 20),
+                style: const TextStyle(fontSize: 20,color: Colors.white),
               ),
             ],
           ),
