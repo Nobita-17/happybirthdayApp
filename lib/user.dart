@@ -17,9 +17,18 @@ class _UserdetailsState extends State<Userdetails> {
   bool flag= false;
 
   void Change(){
-    setState(() {
-      flag=true;
-    });
+    if (userName.isNotEmpty && birthdayMessage.isNotEmpty) {
+      setState(() {
+        flag = true;
+      });
+    }
+    else {
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text("Please provide both a name and a birthday message."),
+        ),
+      );
+    }
   }
 
   @override
