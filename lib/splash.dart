@@ -43,6 +43,9 @@ class _SplashScreenState extends State<SplashScreen> {
                 height: 20,
               ),
               Container(
+                decoration: BoxDecoration(
+                  borderRadius:BorderRadius.circular(10.0),
+                ),
                 child: Image.asset('image/birthday2.png'),
                 width: 400,
                 height: 225,
