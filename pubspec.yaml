@@ -64,6 +64,7 @@ flutter:
   assets:
     - assets/image/birthday.jpg
     - assets/image/birthday2.png
+    - assets/image/candle.png
 
   #   - images/a_dot_ham.jpeg
 

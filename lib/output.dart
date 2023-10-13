@@ -55,7 +55,7 @@ class _FinalScreenState extends State<FinalScreen> {
             children: [
               Text(
                 "Happy Birthday ${widget.userName}",
-                style: const TextStyle(fontSize: 34, fontWeight: FontWeight.bold,color: Colors.white10),
+                style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold,color: Colors.black),
               ),
               ConfettiWidget(
                 confettiController: _controller,
@@ -66,7 +66,8 @@ class _FinalScreenState extends State<FinalScreen> {
                 minBlastForce: 20, // Minimum force applied to confetti
                 gravity: 0.2, // Gravity applied to confetti
               ),
-              SizedBox(height: 70),
+              SizedBox(height: 20),
+              Image.asset('image/candle.png',width: 100,height: 55,),
               Container(
                 width: 100,
                 height: 50,
@@ -91,7 +92,7 @@ class _FinalScreenState extends State<FinalScreen> {
               SizedBox(height: 70),
               Text(
                 " ${widget.birthdayMessage}",
-                style: const TextStyle(fontSize: 20,color: Colors.white),
+                style: const TextStyle(fontSize: 20,color: Colors.black87,fontWeight: FontWeight.bold),
               ),
             ],
           ),
